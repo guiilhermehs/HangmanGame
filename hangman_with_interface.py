@@ -4,7 +4,7 @@ from tkinter import ttk
 from tkinter import messagebox
 
 #Initial variables
-words = ["TE"]
+words = ["PYTHON","BANANA","ELEPHANT","SUNSHINE","RAINBOW","SHARK","OCEAN","COOKIE"]
 guessed_letters = []
 used_words = []
 
