@@ -51,7 +51,7 @@ def hintword(word): #Function to get a random letter from the word and reveal it
 
 #START Variable declaration
 #If you want to use compound words, write "PYTHON PY" instead of "PYTHON-PY".
-words = ["PYT HON"]
+words = ["PYTHON","BANANA","ELEPHANT","SUNSHINE","RAINBOW","SHARK","OCEAN","COOKIE"]
 letters = []
 usedwords = []
 tries = 0
