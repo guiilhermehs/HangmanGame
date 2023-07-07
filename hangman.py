@@ -1,4 +1,6 @@
 import random
+from tkinter import *
+from tkinter import messagebox
 #START Functioin section
 def randindex(list): #Function to select a random index from a list
     while True:
@@ -9,8 +11,8 @@ def hideword(word): #Function to hide the word using underscores
     global foundletters
     hiddenword = []
     for i in range(len(word)):
-        if (word[i] == '-'):
-            hiddenword.append('-')
+        if (word[i] == ' '):
+            hiddenword.append(' ')
             foundletters +=1
         else:
             hiddenword.append('_')
@@ -49,7 +51,7 @@ def hintword(word): #Function to get a random letter from the word and reveal it
 
 #START Variable declaration
 #If you want to use compound words, write "PYTHON PY" instead of "PYTHON-PY".
-words = ["PYTHON","BANANA","ELEPHANT","SUNSHINE","RAINBOW"]
+words = ["PYT HON"]
 letters = []
 usedwords = []
 tries = 0
@@ -70,7 +72,7 @@ while True: #Main loop
         tries = 0
         maxtries = len(word)+4
         letters.clear()
-        letters.append('-')
+        letters.append(' ')
         hiddenword = hideword(word)
         usedwords.append(word)
     while True: #Loop with the game logic
